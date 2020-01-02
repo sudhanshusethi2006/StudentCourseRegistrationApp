@@ -1,0 +1,10 @@
+<div>
+  <b>Students: </b>
+  <select id="student-list-select" [(ngModel)]="studentNumber" (ngModelChange)="ShowStudentInfo($event)">
+   
+    <option *ngFor="let student of studentList" [value]="student.studentNumber" >
+        {{student.firstName}} {{student.lastName}}
+  </select>
+</div>
+
+<!-- (blur)="ShowStudentInfo($event)"  -->

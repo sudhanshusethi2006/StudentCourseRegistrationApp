@@ -1,0 +1,6 @@
+<app-student-list id="app-student-list-component" (studentSelectedEmit)=function_studentSelectedEmit($event)></app-student-list>
+<br/>
+<!-- <app-student-info id="app-student-info-component" (studentSelectedEmit)=function_studentSelectedEmit($event)></app-student-info> -->
+<app-student-info id="app-student-info-component" [studentSelected]="studentSelected_StudentList" (ListOfCoursesIdsEmit)=function_ListOfCoursesIdsEmit($event)></app-student-info>
+<br/>
+<app-student-courses id="app-student-courses-component" [listOfCourses]="ListOFcourses_StudentInfo"></app-student-courses>
